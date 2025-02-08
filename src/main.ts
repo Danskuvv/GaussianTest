@@ -1,8 +1,8 @@
 import {
   ArcRotateCamera,
   Engine,
-  FreeCamera,
-  HemisphericLight,
+  //FreeCamera,
+  //HemisphericLight,
   Mesh,
   MeshBuilder,
   Scene,
@@ -33,7 +33,7 @@ const createScene = () => {
     scene,
   );
   camera.attachControl(canvas, false);
-  const light = new HemisphericLight('light1', new Vector3(1, 1, 1), scene);
+  // const light = new HemisphericLight('light1', new Vector3(1, 1, 1), scene);
   const box = MeshBuilder.CreateBox(
     'box1',
     { size: 11, sideOrientation: Mesh.FRONTSIDE },
